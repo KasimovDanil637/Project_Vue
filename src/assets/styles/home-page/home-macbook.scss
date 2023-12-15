@@ -1,0 +1,29 @@
+.content_container{
+  padding-top: 40px;
+  background-color: black;
+  height: 500px;
+  display: flex;
+  text-align: center;
+  .content_item-poster{
+    background-image: url("/src/assets/img/home-page/poster_pro_m3.png");
+    background-size: cover;
+    width: 60%;
+    height: 500px;
+  }
+  .content_item-text{
+    padding-top: 150px;
+    width: 50%;
+    height: 600px;
+    .item_text{
+      color: white;
+      font-size: 40px;
+    }
+    .item_link{
+      color: var(--color-gray-2);
+      font-size: 20px;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 10px;
+    }
+  }
+}

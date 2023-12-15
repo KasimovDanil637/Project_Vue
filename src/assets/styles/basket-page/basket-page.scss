@@ -1,0 +1,68 @@
+.container{
+  padding-top: 40px;
+  display: flex;
+}
+.container_items{
+  margin-top: 110px;
+  margin-left: 50px;
+  height: 600px;
+  overflow: auto;
+  width: 750px;
+  margin-right: 50px;
+}
+.container_text{
+  padding-top: 40px;
+  margin-left: 100px;
+  position: absolute;
+  font-size: 50px;
+}
+.line{
+  width: 51%;
+  left: 50px;
+  position: absolute;
+  top: 150px;
+  border-top: 1px solid #d9d9d9;
+}
+.container_buy{
+  background-color: ghostwhite;
+  margin-top: 110px;
+  width: 40%;
+  height: 400px;
+  border: 1px solid var(--color-gray-3);
+  border-radius: 20px;
+  .container_buy_header{
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .line-buy{
+    margin: 0 auto 40px;
+    width: 80%;
+    border-top: 1px solid var(--color-gray-3);
+  }
+  .buy-count{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+  }
+  .buy-summa-text{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  .buy-summa{
+    font-size: 50px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+  .buy-btn{
+    margin-left: 60px;
+    width: 80%;
+    height: 40px;
+    background-color: #6fff6f;
+    font-size: 20px;
+    border: 0;
+    border-radius: 15px;
+  }
+}

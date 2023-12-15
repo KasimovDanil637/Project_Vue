@@ -1,0 +1,33 @@
+.container{
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.container_img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  .img {
+    width: 120px;
+  }
+}
+.container_content{
+  width: 220px;
+  margin-right: 250px;
+  .content_name{
+    padding-top: 10px;
+    margin: 0 0 10px;
+  }
+}
+.content_delete{
+  width: 100px;
+  padding: 5px;
+  border: 0;
+  margin-left: 10%;
+  border-radius:5px;
+}
+.content_price{
+  padding-top: 40px;
+  font-size: 30px;
+  margin-bottom: 5px;
+}

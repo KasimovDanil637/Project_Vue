@@ -1,18 +1,19 @@
 <template>
   <div class="main-container">
-    <LoginPage/>
+    <layout-header/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 
 
-import LoginPage from "@/pages/login-page/LoginPage.vue";
+import LayoutHeader from "@/layout/layout-header/LayoutHeader.vue";
 
 export default {
   name: 'App',
   components: {
-    LoginPage,
+    LayoutHeader,
   }
 }
 </script>

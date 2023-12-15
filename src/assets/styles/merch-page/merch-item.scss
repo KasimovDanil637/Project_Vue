@@ -1,0 +1,44 @@
+.container-item{
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 20%;
+  height: 350px;
+  .container_img{
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 180px;
+    height: 250px;
+    .img{
+      width: 180px;
+    }
+  }
+  .container_name{
+    margin: 0;
+    text-align: center;
+  }
+  .container_price{
+    text-align: center;
+  }
+  .container_buy {
+    border: 0;
+    width: 50px;
+    margin-left: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    .buy-btn {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .container_buy:hover{
+    border: 1px solid #d9d9d9;
+  }
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.container-item:hover{
+  border-radius: 10px;
+  background-color: whitesmoke;
+}

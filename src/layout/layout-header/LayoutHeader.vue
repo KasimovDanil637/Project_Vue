@@ -1,14 +1,25 @@
 <template>
   <div class="container">
-  <router-link to="/">Главная</router-link>
-  <router-link to="/news">Новости</router-link>
+    <div class="container_items">
+      <router-link  class="container_item first-item" to="/home">
+        <img class="container_item-img" src="/Users/danil/WebstormProjects/Project_2_42lab/src/assets/img/logo.png" alt="apple_icon">
+      </router-link>
+      <router-link class="container_item" to="/iphone">iPhone</router-link>
+      <router-link class="container_item" to="/ipad">iPad</router-link>
+      <router-link class="container_item" to="/mac">Mac</router-link>
+      <router-link class="container_item" to="/watch">Watch</router-link>
+      <router-link class="container_item " to="/airpods">AirPods</router-link>
+      <router-link  class="container_item last-item" to="/basket">
+        <img class="container_item-img" src="/Users/danil/WebstormProjects/Project_2_42lab/src/assets/img/basket.png" alt="apple_icon">
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LayoutHeader'
+  name: 'LayoutHeader',
 }
 </script>
 
-<style scoped lang="scss" src="./styles.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/lyaout/header-layout.scss"></style>

@@ -49,6 +49,7 @@ export default {
       merch: '',
       data_analog: [],
       isActive: false,
+      merchIsTrue: false,
       btn: "Добавить в корзину",
       merchData:{
         name: '',
@@ -78,8 +79,12 @@ export default {
      this.data_base.forEach((item) => {
        if (item.id === Number(id)){
          this.merch = item
+         this.merchIsTrue = true;
        }
      })
+      if (!this.merchIsTrue){
+        this.$router.push(`/`)
+      }
       this.merchData = {
         name: this.merch.name,
         id: this.merch.id,

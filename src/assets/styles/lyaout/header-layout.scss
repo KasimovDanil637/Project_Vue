@@ -7,7 +7,7 @@
   .container_items {
     display: flex;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 22%;
     margin-right: 25%;
     padding-top: 12px;
     font-size: 14px;
@@ -25,5 +25,8 @@
     .last-item{
       margin-right: 0;
     }
+  }
+  .container_item:hover{
+    color: var(--color-gray-3);
   }
 }

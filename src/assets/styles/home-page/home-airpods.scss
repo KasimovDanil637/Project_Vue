@@ -1,27 +1,27 @@
-.container {
+.container-airpods {
   margin-right: 10px;
   width: 50%;
   margin-bottom: 50px;
-  .content_container {
+  .content_container-airpods  {
     border-radius: 10px;
     background-color: #0d1117;
     padding-top: 40px;
     height: 550px;
     text-align: center;
-    .content_item-poster {
+    .content_item-poster-airpods  {
       margin: 0 auto 10px;
       background-image: url("/src/assets/img/home-page/poster_airpods.png");
       background-size: cover;
       width: 94%;
       height: 430px;
     }
-    .content_item-text {
+    .content_item-text-airpods  {
       width: 100%;
-      .item_text {
+      .item_text-airpods  {
         color: white;
         font-size: 40px;
       }
-      .item_link {
+      .item_link-airpods  {
         color: var(--color-gray-2);
         font-size: 20px;
         text-decoration: none;

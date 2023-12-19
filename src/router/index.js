@@ -9,6 +9,11 @@ const router = createRouter({
             component: () => import('../pages/home-page/HomePage.vue')
         },
         {
+            path: '/',
+            name: 'main',
+            component: () => import('../pages/home-page/HomePage.vue')
+        },
+        {
             path: '/iphone',
             name: 'iphone',
             component: () => import('../pages/iphone-page/IphonePage.vue')
@@ -29,14 +34,29 @@ const router = createRouter({
             component: () => import('../pages/watch-page/WatchPage.vue')
         },
         {
-            path: '/check_merch/:category/:id',
+            path: '/airpods',
+            name: 'airpods',
+            component: () => import('../pages/airpods-page/AirpodsPage.vue')
+        },
+        {
+            path: '/merch/:category/:id',
             name: 'check',
-            component: () => import('../pages/check-page/CheckPage.vue')
+            component: () => import('../pages/merch-page/MerchPage.vue')
         },
         {
             path: '/basket',
             name: 'basket',
             component: () => import('../pages/basket-page/BasketPage.vue')
+        },
+        {
+            path: '/about_us',
+            name: 'about',
+            component: () => import('../pages/footer-pages/AboutPage.vue')
+        },
+        {
+            path: '/support',
+            name: 'support',
+            component: () => import('../pages/footer-pages/SupportPage.vue')
         },
     ]
 })

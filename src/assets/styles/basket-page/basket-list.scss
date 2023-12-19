@@ -18,6 +18,9 @@
     padding-top: 10px;
     margin: 0 0 10px;
   }
+  .content_add{
+    display: flex;
+  }
 }
 .content_delete{
   width: 100px;
@@ -30,4 +33,7 @@
   padding-top: 40px;
   font-size: 30px;
   margin-bottom: 5px;
+}
+.non-active{
+  background-color: red;
 }

@@ -17,9 +17,10 @@ export default {
   components: {ItemForPage},
   data(){
     return{
-      merch: DATA_BASE_IPHONE
+      merch: DATA_BASE_IPHONE,
+      filter: "Все товары"
     }
-  }
+  },
 };
 </script>
 

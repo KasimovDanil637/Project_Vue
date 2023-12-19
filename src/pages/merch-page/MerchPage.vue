@@ -6,9 +6,9 @@
       </div>
       <div class="container_content">
         <div :class="isActive ? 'content_new' : 'content_not_new'">Новинка</div>
-        <h1 class="content_name">{{merch.name}} {{merch.memory}}</h1>
+        <h1 class="content_name">{{merch.name}} {{merch.memory}}, {{merch.color}}</h1>
         <div class="content_color">
-          <div class="color-text">Цвет</div>
+          <div class="color-text" >Цвет</div>
           <ColorItem v-for="(item,index) in data_analog"  :key="index" :item="item"/>
         </div>
         <div class="content_price">{{merch.price}}₽</div>
@@ -25,8 +25,14 @@
 </template>
 
 <script>
-import {DATA_BASE_IPAD, DATA_BASE_IPHONE, DATA_BASE_MAC, DATA_BASE_WATCH} from "@/assets/js/data_base";
-import ColorItem from "@/components/check-page/ColorItemComponent.vue";
+import {
+  DATA_BASE_AIRPODS,
+  DATA_BASE_IPAD,
+  DATA_BASE_IPHONE,
+  DATA_BASE_MAC,
+  DATA_BASE_WATCH
+} from "@/assets/js/data_base";
+import ColorItem from "@/components/merch-page/ColorItemComponent.vue";
 
 export default {
   name: "BuyPageComponent.vue",
@@ -51,7 +57,9 @@ export default {
         img: '',
         color: '',
         category: '',
-        memory: ''
+        memory: '',
+        count: 0,
+        max: 0,
       }
     }
   },
@@ -62,6 +70,7 @@ export default {
         case "ipad": this.data_base = DATA_BASE_IPAD; break
         case "mac": this.data_base = DATA_BASE_MAC; break
         case "watch": this.data_base = DATA_BASE_WATCH; break
+        case "airpods": this.data_base = DATA_BASE_AIRPODS; break
       }
       this.getMerch(this.$route.params.id)
     },
@@ -78,7 +87,9 @@ export default {
         img: this.merch.img,
         color: this.merch.color,
         category: this.merch.category,
-        memory: this.merch.memory
+        memory: this.merch.memory,
+        count: this.merch.count,
+        max: this.merch.max
       }
       this.getOnlyAnalog()
     },
@@ -86,7 +97,7 @@ export default {
       this.data_base.forEach((item) => {
         if (item.name === this.merch.name){
           this.data_analog.push(item);
-          if (item.name === "iPhone 15" || item.name === "iMac 24 M3"){
+          if (item.name === "iPhone 15" || item.name === "iMac 24 M3" || item.name === "Watch Ultra 2, 49 мм" || item.name === "Watch Series 9, 45 мм"){
             this.isActive = true;
           }
         }

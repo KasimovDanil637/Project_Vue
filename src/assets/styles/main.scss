@@ -1,10 +1,13 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: var(--color-gray-1);
 }
 
 .main-container{
   width: 100%;
   background-color: white;
+}
+.router-link-active{
+  color: red;
 }

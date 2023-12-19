@@ -2,13 +2,17 @@
   padding-top: 40px;
   display: flex;
 }
+.no-items{
+  color: #494141;
+  position: absolute;
+  padding-top: 200px;
+  margin-left: 25%;
+}
 .container_items{
-  margin-top: 110px;
-  margin-left: 50px;
-  height: 600px;
+  height: 500px;
   overflow: auto;
   width: 750px;
-  margin-right: 50px;
+  margin: 110px 50px 50px;
 }
 .container_text{
   padding-top: 40px;

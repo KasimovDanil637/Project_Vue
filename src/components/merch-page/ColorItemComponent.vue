@@ -15,7 +15,7 @@ export default {
   },
   methods:{
     redirect(){
-      this.$router.push(`/check_merch/${this.item.category}/${this.item.id}`).then(() => {
+      this.$router.push(`/merch/${this.item.category}/${this.item.id}`).then(() => {
         window.location.reload();
       });
 

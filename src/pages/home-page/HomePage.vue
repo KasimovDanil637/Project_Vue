@@ -1,25 +1,59 @@
 <template>
   <div class="container">
-    <IphoneComponent/>
-    <MacbookComponent/>
-    <WatchComponent/>
+    <div class="content_container-iphone">
+      <div class="content_item-text-iphone">
+        <div class="item_text-iphone">iPhone</div>
+        <router-link class="item_link-iphone" to="/iphone">Посмотреть</router-link>
+      </div>
+      <div class="content_item-poster-iphone"></div>
+    </div>
+    <div class="content_container-mac">
+      <div class="content_item-poster-mac"></div>
+      <div class="content_item-text-mac">
+        <div class="item_text-mac">Macbook</div>
+        <router-link class="item_link-mac" to="/mac">Посмотреть</router-link>
+      </div>
+    </div>
+    <div class="content_container-watch">
+      <div class="content_item-text-watch">
+        <div class="item_text-watch">Watch</div>
+        <router-link class="item_link-watch" to="/watch">Посмотреть</router-link>
+      </div>
+      <div class="content_item-poster-watch"></div>
+    </div>
     <div class="container_line">
-      <IpadComponent/>
-      <AirpodsComponent/>
+      <div class="container-ipad">
+        <div class="content_container-ipad">
+          <div class="content_item-poster-ipad"></div>
+          <div class="content_item-text-ipad">
+            <div class="item_text-ipad">iPad</div>
+            <router-link class="item_link-ipad" to="/ipad">Посмотреть</router-link>
+          </div>
+        </div>
+      </div>
+      <div class="container-airpods">
+        <div class="content_container-airpods ">
+          <div class="content_item-poster-airpods "></div>
+          <div class="content_item-text-airpods ">
+            <div class="item_text-airpods ">Air Pods</div>
+            <router-link class="item_link-airpods " to="/airpods">Посмотреть</router-link>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import IphoneComponent from "@/components/home-page/IphoneComponent.vue";
-import MacbookComponent from "@/components/home-page/MacbookComponent.vue";
-import WatchComponent from "@/components/home-page/WatchComponent.vue";
-import IpadComponent from "@/components/home-page/IpadComponent.vue";
-import AirpodsComponent from "@/components/home-page/AirPodsComponent.vue";
+
 export default {
   name: "HomePage",
-  components: {AirpodsComponent, IpadComponent, WatchComponent, MacbookComponent, IphoneComponent},
 };
 </script>
 
 <style scoped lang="scss" src="/src/assets/styles/home-page/home.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/home-page/home-iphone.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/home-page/home-macbook.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/home-page/home-watch.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/home-page/home-ipad.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/home-page/home-airpods.scss"></style>

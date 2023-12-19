@@ -4,7 +4,7 @@
           <img class="img" :src="item.img" alt="iphone-image">
         </div>
         <h2 class="container_name">{{ item.name }} {{item.memory}}</h2>
-        <div class="container_price">{{ item.color }}</div>
+        <div class="container_color">{{ item.color }}</div>
         <div class="container_price"> <strong>{{ item.price}}₽</strong></div>
       </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   },
   methods:{
     redirect(){
-      this.$router.push(`/check_merch/${this.item.category}/${this.item.id}`);
+      this.$router.push(`/merch/${this.item.category}/${this.item.id}`);
     }
   }
 }

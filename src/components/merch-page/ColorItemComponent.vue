@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import {BasketStore} from "@/stores/basket.store";
+
 export default {
   name: "ColorItem",
   props: {
@@ -15,6 +17,7 @@ export default {
   },
   methods:{
     redirect(){
+
       this.$router.push(`/merch/${this.item.category}/${this.item.id}`).then(() => {
         window.location.reload();
       });
@@ -23,4 +26,4 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss" src="/src/assets/styles/check-page/check-color-item.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/check-page/merch-color-item.scss"></style>

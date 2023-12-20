@@ -25,4 +25,4 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss" src="/src/assets/styles/merch-page/merch-item.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/product-page/product-item.scss"></style>

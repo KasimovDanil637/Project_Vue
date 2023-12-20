@@ -10,6 +10,7 @@
       <router-link class="container_item" to="/watch">Watch</router-link>
       <router-link class="container_item " to="/airpods">AirPods</router-link>
       <router-link  class="container_item last-item" to="/basket">
+        <div v-if="this.basketStore.basket > 0" class="countBasket">{{this.basketStore.basket}}</div>
         <img class="container_item-img" src="/Users/danil/WebstormProjects/Project_2_42lab/src/assets/img/basket.png" alt="apple_icon">
       </router-link>
     </div>
@@ -17,8 +18,17 @@
 </template>
 
 <script>
+import {BasketStore} from "@/stores/basket.store";
+
 export default {
   name: 'LayoutHeader',
+  setup: function () {
+    const basketStore = BasketStore()
+    return {
+      basketStore
+    }
+  },
+
 }
 </script>
 

@@ -26,6 +26,7 @@ import {
   DATA_BASE_WATCH
 } from "@/assets/js/data_base";
 import BasketItem from "@/components/basket-page/BasketItemComponent.vue";
+import {BasketStore} from "@/stores/basket.store";
 
 export default {
   name: "BasketPage",
@@ -54,6 +55,12 @@ export default {
       summa: 0,
     }
   },
+  setup: function () {
+    const basketStore = BasketStore()
+    return {
+      basketStore
+    }
+  },
   methods:{
     getSum(){
       this.data.forEach((item) => {
@@ -76,6 +83,7 @@ export default {
         this.summa = 0;
         localStorage.removeItem(`add_basket_${item.name}_${item.id}`)
         localStorage.removeItem(`${item.name}_${item.id}`)
+        this.basketStore.minusCountBasket()
         this.getSum();
       }
     },

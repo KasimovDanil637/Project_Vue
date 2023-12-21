@@ -60,8 +60,6 @@ export default {
         color: '',
         category: '',
         memory: '',
-        count: 0,
-        max: 0,
       }
     }
   },
@@ -100,8 +98,6 @@ export default {
         color: this.merch.color,
         category: this.merch.category,
         memory: this.merch.memory,
-        count: this.merch.count,
-        max: this.merch.max
       }
       this.getOnlyAnalog()
     },

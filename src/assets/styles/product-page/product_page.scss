@@ -108,7 +108,18 @@ body{
   width: 130px;
 }
 .button-reset{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border-radius: 7px;
+  border: 1px solid var(--color-gray-3);
+  outline: none;
+  height: 25px;
+  width: 280px;
+  margin-right: 8px;
+  background-color: white;
+}
+.button-apply{
+  margin-bottom: 15px;
   margin-left: 10px;
   border-radius: 7px;
   border: 1px solid var(--color-gray-3);

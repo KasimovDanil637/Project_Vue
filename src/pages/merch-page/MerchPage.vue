@@ -90,7 +90,7 @@ export default {
        }
      })
       if (!this.merchIsTrue){
-        this.$router.push(`/`)
+        this.$router.push(`/${this.$route.params.category}`)
       }
       this.merchData = {
         name: this.merch.name,
@@ -117,9 +117,11 @@ export default {
     },
     addBasket(){
       localStorage.setItem(`${this.merch.name}_${this.merch.id}`, JSON.stringify(this.merchData))
+      if (document.getElementById("btn-add-basket").textContent !== "В корзине"){
+        this.basketStore.plusCountBasket()
+      }
       document.getElementById("btn-add-basket").textContent = "В корзине"
       localStorage.setItem(`add_basket_${this.merch.name}_${this.merch.id}`, document.getElementById("btn-add-basket").textContent )
-      this.basketStore.plusCountBasket()
     }
   }
 

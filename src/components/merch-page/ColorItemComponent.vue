@@ -26,4 +26,4 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss" src="/src/assets/styles/check-page/merch-color-item.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/merch-page/merch-color-item.scss"></style>

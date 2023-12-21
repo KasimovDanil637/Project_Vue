@@ -129,4 +129,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss" src="/src/assets/styles/check-page/merch-page.scss"></style>
+<style scoped lang="scss" src="/src/assets/styles/merch-page/merch-page.scss"></style>

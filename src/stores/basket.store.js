@@ -3,16 +3,18 @@ import {defineStore} from "pinia/dist/pinia";
 export const BasketStore = defineStore("post-store",{
     // храним переменные
     state: () => ({
-        basket: 0,
+        basket: localStorage.getItem("countBasket"),
     }),
     //для функций
     actions: {
         plusCountBasket(){
             this.basket++
+            localStorage.setItem("countBasket", this.basket)
         },
         minusCountBasket(){
             if (this.basket > 0) {
                 this.basket--
+                localStorage.setItem("countBasket", this.basket)
             }
         },
 
